@@ -37,7 +37,9 @@ make lint
 * after you connect the repository with circleCI, every checkin will trigger a pipeline run
 * Below is the screenshot of a successful make lint run
   ![](images/successfullint.jpg)
-    
+* Then we intentionally cause the lint fail and generate a failed lint run screenshot
+  ![](images/failed-lint.jpg)
+
 
 ---
 
