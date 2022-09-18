@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Build image and add a descriptive tag
-docker build -t helloworld-app .
+docker build --tag=tltang168/helloworld-app .
 
 # List docker images
-docker images
+docker image ls
 
 # Run flask app
-docker run -it --rm -p 80:80 helloworld-app
+docker run -p 80:80 helloworld-app

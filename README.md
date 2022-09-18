@@ -32,7 +32,8 @@ make lint
   * AWS_ACCESS_KEY_ID
   * AWS_SECRET_ACCESS_KEY
   * AWS_DEFAULT_REGION
-  * 
+  * DOCKER_USERNAME
+  * DOCKER_PASSWORD
 
 * after you connect the repository with circleCI, every checkin will trigger a pipeline run
 * Below is the screenshot of a successful make lint run
