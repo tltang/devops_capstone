@@ -40,7 +40,9 @@ make lint
   ![](images/successfullint.jpg)
 * Then we intentionally cause the lint fail and generate a failed lint run screenshot
   ![](images/failed-lint.jpg)
-
+* when step build-publish runs, it publishes an image to docker.
+  ![](images/docker-1.jpg)
+  ![](images/docker-2.jpg)
 
 ---
 
@@ -48,8 +50,11 @@ make lint
 ## Running `app.py`
 
 1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Push image to Docker Hub: `./upload_docker.sh`
+2. Run in Docker:  `./run_docker.sh`, below is the image showing the docker local run
+   ![](images/docker-3.jpg)
+3. Push image to Docker Hub: `./upload_docker.sh`, below is the image showing the docker upload
+   ![](images/docker-4.jpg)
+
 4. Create initial AWS EKS cluster using eksctl and config file:  `eksctl create cluster -f cluster.yaml`.
 5. Create initial AWS EKS deployment `./run_kubernete.sh`. 
 6. Rolling deployment to AWS EKS after update to app.py:  `./deploy_kubernete.sh`.
