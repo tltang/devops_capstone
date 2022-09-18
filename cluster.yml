@@ -16,4 +16,4 @@ nodeGroups:
     maxsize: 3
     ssh:
       allow: true
-      publicKeyName: key-pair-us-west-2
+      publicKeyName: devops-east2
