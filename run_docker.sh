@@ -7,4 +7,4 @@ docker build --tag=tltang168/helloworld-app .
 docker image ls
 
 # Run flask app
-docker run -p 80:80 helloworld-app
+docker run -p 80:80 tltang168/helloworld-app
