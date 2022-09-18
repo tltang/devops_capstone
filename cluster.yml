@@ -5,11 +5,15 @@ metadata:
   name: helloworld
   region: us-east-2
 
+iam:
+  withOIDC: true
+
 nodeGroups:
   - name: ng-1
     instanceType: t2.small
+    amiFamily: AmazonLinux2
     minsize: 2
     maxsize: 3
     ssh:
       allow: true
-
+      publicKeyName: key-pair-us-west-2
