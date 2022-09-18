@@ -145,14 +145,14 @@ workflows:
       - build-publish:
           requires:
             - build
-      - create-cluster:
-          cluster-name: helloworld-eks
-          requires:
-            - build-publish
-      - deploy-application:
-          cluster-name: helloworld-eks
-          aws-region: $AWS_DEFAULT_REGION
-          docker-image-name: "tltang168/helloworld-app:latest"
-          version-info: "latest"
-          requires:
-            - create-cluster
+#      - create-cluster:
+#          cluster-name: helloworld-eks
+#          requires:
+#            - build-publish
+#      - deploy-application:
+#          cluster-name: helloworld-eks
+#          aws-region: $AWS_DEFAULT_REGION
+#          docker-image-name: "tltang168/helloworld-app:latest"
+#          version-info: "latest"
+#          requires:
+#            - create-cluster
