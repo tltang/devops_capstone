@@ -9,7 +9,7 @@ dockerpath=tltang168/helloworld-app
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login && \
-docker tag helloworld-app $dockerpath
+docker tag tltang168/helloworld-app $dockerpath
 
 # Push image to a docker repository
 docker push $dockerpath
