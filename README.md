@@ -36,7 +36,7 @@ make lint
 
 * after you connect the repository with circleCI, every checkin will trigger a pipeline run
 * Below is the screenshot of a successful make lint run
-  ![Alt text](/blob/master/successful-lint.jpg?raw=true "Optional Title")
+  ![Alt text](./blob/master/successful-lint.jpg?raw=true "Optional Title")
 ---
 
 
