@@ -46,10 +46,21 @@ make lint
 
 ## Set up Kubernetes
 
+When circleci step "create-cluster" runs, it 
 * install kubectl
 * install eksctl
-* Create initial AWS EKS cluster using eksctl and config file:  `eksctl create cluster -f cluster.yaml`
-  ![](images/eks-creation-1.jpg)
+* Create initial AWS EKS cluster using eksctl and config file cluster.yml
+  ![](images/circleci-EKSCluster-creation-1.jpg)
+  ![](images/circleci-EKSCluster-creation-2.jpg)
+* Create CloudFormation stacks
+  ![](images/circleci-CloudFormation-Stacks.jpg)
+* Create Kubernetes Notes
+  ![](images/Kubernetes-Nodes-1.jpg)
+  ![](images/Kubernetes-Nodes-2.jpg)
+* Create AWS ec2 instances
+  ![](images/aws-ec2.jpg)
+
+
 
 
 
