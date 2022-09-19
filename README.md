@@ -65,12 +65,15 @@ When circleci step "create-cluster" runs, it
 When step deploy-application runs, it deploys the rolling current version to Kubernetes.
 * Deployment images are as follows
   ![](images/circleci-deploy1.jpg)
-  ![](images/circleci-deploy1.jpg)
+  ![](images/circleci-deploy2.jpg)
 
 * Go to the External IP, we can see our current version Version 1 is running
   ![](images/ExternalIP-VersionOne.jpg)
-  
-Rolling deployment to AWS EKS after update to app.py
+
+* Since this is rolling deployment strategy, we modify the app.py and then commit to trigger the circleci  
+* Go to the External IP again, we can see our current version Version 2 is running
+  ![](images/ExternalIP-VersionTwo.jpg)
+
 ---
 
 
@@ -81,9 +84,6 @@ Rolling deployment to AWS EKS after update to app.py
    ![](images/docker-3.jpg)
 3. Push image to Docker Hub: `./upload_docker.sh`, below is the image showing the docker upload
    ![](images/docker-4.jpg)
-4. 
-5. Rolling deployment to AWS EKS after update to app.py:  `./deploy_kubernete.sh`.
-
 
 ---
 ## Brief file description
@@ -92,6 +92,4 @@ Rolling deployment to AWS EKS after update to app.py
 * `run_docker.sh` - build and run docker image locally
 * `upload_docker.sh` - upload docker image to docker hub
 * `cluster.yml` - simple k8s cluster config
-* `run_k8s.sh` - initial k8s deployment
-* `deploy_k8s.sh` - rolling k8s deployment
 ---
