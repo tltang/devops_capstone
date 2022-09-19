@@ -145,10 +145,10 @@ workflows:
       - build-publish:
           requires:
             - build
-#      - create-cluster:
-#          cluster-name: helloworld-eks
-#          requires:
-#            - build-publish
+      - create-cluster:
+          cluster-name: helloworld-eks
+          requires:
+            - build-publish
 #      - deploy-application:
 #          cluster-name: helloworld-eks
 #          aws-region: $AWS_DEFAULT_REGION
