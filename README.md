@@ -44,6 +44,16 @@ make lint
   ![](images/docker-1.jpg)
   ![](images/docker-2.jpg)
 
+## Set up Kubernetes
+
+* install kubectl
+* install eksctl
+* Create initial AWS EKS cluster using eksctl and config file:  `eksctl create cluster -f cluster.yaml`
+  ![](images/eks-creation-1.jpg)
+
+
+
+
 ---
 
 
@@ -54,8 +64,7 @@ make lint
    ![](images/docker-3.jpg)
 3. Push image to Docker Hub: `./upload_docker.sh`, below is the image showing the docker upload
    ![](images/docker-4.jpg)
-
-4. Create initial AWS EKS cluster using eksctl and config file:  `eksctl create cluster -f cluster.yaml`.
+4. .
 5. Create initial AWS EKS deployment `./run_kubernete.sh`. 
 6. Rolling deployment to AWS EKS after update to app.py:  `./deploy_kubernete.sh`.
 

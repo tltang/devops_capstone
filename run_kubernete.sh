@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # This is your Docker ID/path
-dockerpath=tltang168/helloworld-app
+dockerpath=tltang168/helloworld-app:latest
 
 # Run the Docker Hub container with kubernetes
 kubectl create deployment helloworld-app --image=$dockerpath
