@@ -75,9 +75,8 @@ When circleci step "create-cluster" runs, it
    ![](images/docker-3.jpg)
 3. Push image to Docker Hub: `./upload_docker.sh`, below is the image showing the docker upload
    ![](images/docker-4.jpg)
-4. .
-5. Create initial AWS EKS deployment `./run_kubernete.sh`. 
-6. Rolling deployment to AWS EKS after update to app.py:  `./deploy_kubernete.sh`.
+4. Create initial AWS EKS deployment `./run_kubernete.sh`. 
+5. Rolling deployment to AWS EKS after update to app.py:  `./deploy_kubernete.sh`.
 
 
 ---
