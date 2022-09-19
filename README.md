@@ -60,11 +60,17 @@ When circleci step "create-cluster" runs, it
 * Create AWS ec2 instances
   ![](images/aws-ec2.jpg)
 
+## Deploy App
 
+When step deploy-application runs, it deploys the rolling current version to Kubernetes.
+* Deployment images are as follows
+  ![](images/circleci-deploy1.jpg)
+  ![](images/circleci-deploy1.jpg)
 
-
-
-
+* Go to the External IP, we can see our current version Version 1 is running
+  ![](images/ExternalIP-VersionOne.jpg)
+  
+Rolling deployment to AWS EKS after update to app.py
 ---
 
 
@@ -75,7 +81,7 @@ When circleci step "create-cluster" runs, it
    ![](images/docker-3.jpg)
 3. Push image to Docker Hub: `./upload_docker.sh`, below is the image showing the docker upload
    ![](images/docker-4.jpg)
-4. Create initial AWS EKS deployment `./run_kubernete.sh`. 
+4. 
 5. Rolling deployment to AWS EKS after update to app.py:  `./deploy_kubernete.sh`.
 
 

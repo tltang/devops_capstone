@@ -123,7 +123,7 @@ jobs:
           resource-file-path: "deployment/helloworld-app-service.yaml"
       - aws-eks/setup
       - run:
-          name: Display useful info about the cluster
+          name: Display cluster info
           command: |
             echo
             echo "Listing cluster info"
